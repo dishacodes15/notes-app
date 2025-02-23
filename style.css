@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    color: #fff;
+    padding: 4% 5%; /* Adjusted padding for mobile */
+    flex-grow: 1; /* Allow container to take up available space */
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 30px; /* Adjusted font size for mobile */
+    font-weight: 600;
+}
+
+.container h1 img {
+    width: 50px; /* Adjusted image size for mobile */
+}
+
+.container button img {
+    width: 20px; /* Adjusted image size for mobile */
+    margin-right: 5px;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd, #571094);
+    color: #fff;
+    font-size: 14px; /* Adjusted font size for mobile */
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 10px 20px; /* Adjusted padding for mobile */
+    margin: 20px 0 15px; /* Adjusted margin for mobile */
+    cursor: pointer;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px; /* Adjusted min-height for mobile */
+    background: #fff;
+    color: #333;
+    padding: 15px; /* Adjusted padding for mobile */
+    margin: 15px 0; /* Adjusted margin for mobile */
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted font size for mobile */
+}
+
+.input-box img {
+    width: 20px; /* Adjusted image size for mobile */
+    position: absolute;
+    bottom: 10px; /* Adjusted position for mobile */
+    right: 10px; /* Adjusted position for mobile */
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #8768d0;
+    font-size: 0.8em; /* Adjusted font size for mobile */
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .container {
+        padding: 4% 10%;
+    }
+
+    .container h1 {
+        font-size: 35px;
+    }
+
+    .container h1 img {
+        width: 60px;
+    }
+
+    .container button img {
+        width: 25px;
+        margin-right: 8px;
+    }
+
+    .container button {
+        font-size: 16px;
+        padding: 15px 25px;
+        margin: 30px 0 20px;
+    }
+
+    .input-box {
+        min-height: 150px;
+        padding: 20px;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .input-box img {
+        width: 25px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
