@@ -41,16 +41,31 @@ document.addEventListener("keydown",event=>{
     }
 })
 
-const toggleThemeBtn = document.querySelectorAll(".btn")[1]; 
+const toggleThemeBtn = document.querySelectorAll(".btn")[1]; // Select the second button (toggle theme)
 const body = document.body;
+
+function loadTheme() {
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+        body.classList.add("dark-theme");
+        toggleThemeBtn.querySelector("img").src = "images/sun.png";
+    } else {
+        body.classList.remove("dark-theme");
+        toggleThemeBtn.querySelector("img").src = "images/moon.png";
+    }
+}
+
+loadTheme(); // Call loadTheme on page load
 
 toggleThemeBtn.addEventListener("click", () => {
     body.classList.toggle("dark-theme");
-    
-    if(body.classList.contains("dark-theme")){
+
+    // Store theme preference in local storage
+    if (body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark");
         toggleThemeBtn.querySelector("img").src = "images/sun.png";
-    }
-    else{
+    } else {
+        localStorage.setItem("theme", "light");
         toggleThemeBtn.querySelector("img").src = "images/moon.png";
     }
 });
