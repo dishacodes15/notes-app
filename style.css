@@ -22,12 +22,18 @@ body {
 .container h1 {
     display: flex;
     align-items: center;
-    font-size: 30px; /* Adjusted font size for mobile */
+    font-size: 40px; /* Adjusted font size for mobile */
     font-weight: 600;
 }
 
 .container h1 img {
     width: 50px; /* Adjusted image size for mobile */
+}
+
+.container .btn-container{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 15px;
 }
 
 .container button img {
@@ -47,6 +53,11 @@ body {
     padding: 10px 20px; /* Adjusted padding for mobile */
     margin: 20px 0 15px; /* Adjusted margin for mobile */
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.container button:hover {
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 .input-box {
@@ -86,7 +97,7 @@ footer {
     }
 
     .container h1 {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .container h1 img {
@@ -120,4 +131,16 @@ footer {
     footer {
         font-size: 0.9em;
     }
+}
+
+.dark-theme .container {
+    background: linear-gradient(135deg, #333, #000); /* Darker background */
+}
+
+.dark-theme footer {
+    background-color: #222; /* Darker footer */
+}
+
+.dark-theme .container button {
+    background: linear-gradient(#222, #000); /* Darker button background */
 }
