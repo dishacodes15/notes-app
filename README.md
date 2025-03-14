@@ -9,6 +9,7 @@ This is a simple notes application built using HTML, CSS, and JavaScript. It all
 * **Delete Notes:** Users can delete notes by clicking the delete icon within each note.
 * **Persistent Storage:** Notes are saved in the browser's local storage, so they persist even after the page is closed or refreshed.
 * **Responsive Design:** The application is designed to be compatible with both desktop and mobile devices.
+* **Dark Mode:** Has two modes to lessen eye strain.
 
 ## Technologies Used
 
@@ -25,6 +26,8 @@ This is a simple notes application built using HTML, CSS, and JavaScript. It all
     * Changes are saved automatically as you type.
 3.  **Delete a Note:**
     * Click the delete icon (trash can) within the note.
+4. **Toggle Theme:**
+   * Toggles from a lighter theme to a darker theme
 
 ## JavaScript Logic
 
