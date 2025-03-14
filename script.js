@@ -40,3 +40,17 @@ document.addEventListener("keydown",event=>{
         event.preventDefault();
     }
 })
+
+const toggleThemeBtn = document.querySelectorAll(".btn")[1]; 
+const body = document.body;
+
+toggleThemeBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-theme");
+    
+    if(body.classList.contains("dark-theme")){
+        toggleThemeBtn.querySelector("img").src = "images/sun.png";
+    }
+    else{
+        toggleThemeBtn.querySelector("img").src = "images/moon.png";
+    }
+});
